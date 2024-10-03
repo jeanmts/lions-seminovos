@@ -1,0 +1,147 @@
+.container-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin-top: 60px;
+  }
+  .container-info {
+    display: flex;
+    text-align: left;
+  }
+  .titulo-subT {
+    margin: 30px 60px 0 0;
+  
+  }
+  .titulo-subT h1{
+    font-family: 'Krona one';
+    font-size: 32px;
+  }
+  .titulo-subT h2{
+    font-family: 'Krona one';
+    font-size: 18px;
+  }
+  
+  .titulo-subT button {
+    all: unset;
+    width: 300px;
+    text-align: center;
+    font-family: 'Krona one';
+    font-size: 12px;
+    color: #ffffff;
+    background-color:#B30101 ;
+    padding: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  .titulo-subT a {
+    text-decoration: none;
+  }
+  .botao-contato button:hover {
+    background-color: #8C0000;
+  }
+  
+  .container-img img {
+    width: 500px;
+    height: 100%;
+  }
+  
+  .secao-card {
+    display: flex;
+    justify-content: center;
+    background-color: #B30101;
+    width: 100vw;
+  }
+  .card-mapa {
+    display: flex;
+    align-items: center;
+    max-width: 1280px;
+    gap: 30px;
+  }
+  .card-mapa h1 {
+    font-family: 'Krona one';
+    font-size: 22px;
+  }
+  .card-mapa h2 {
+    font-family: 'Krona one';
+    font-size: 12px;
+  }
+  .card-mapa h1, h2 {
+    color: #ffffff;
+  }
+  .secao-carros {
+    margin: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .container-main {
+        margin-top: 30px;
+        padding: 0 20px; /* Adiciona espaço lateral */
+    }
+
+    .container-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .titulo-subT {
+        margin: 20px 0;
+    }
+
+    .titulo-subT h1 {
+        font-size: 24px; /* Reduz o tamanho da fonte */
+    }
+
+    .titulo-subT h2 {
+        font-size: 16px; /* Ajusta o tamanho da fonte */
+    }
+
+    .titulo-subT button {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .container-img img {
+        width: 100%;
+    }
+
+    .secao-carros {
+        grid-template-columns: repeat(1, 1fr); 
+        margin: 50px 0;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .container-main {
+        padding: 0 30px; 
+    }
+
+    .titulo-subT h1 {
+        font-size: 28px;
+    }
+
+    .titulo-subT h2 {
+        font-size: 16px;
+    }
+
+    .container-img img {
+        width: 400px;
+    }
+
+    .secao-carros {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+/* Telas grandes (desktops) */
+@media (min-width: 1280px) {
+    .secao-carros {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

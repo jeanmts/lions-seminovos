@@ -1,0 +1,14 @@
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #B30101;
+    width: 100vw;
+  }
+  
+  
+  footer img {
+    min-width: 1280px;
+    height: 200px;
+    object-fit: cover;
+  }
+

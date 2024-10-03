@@ -1,0 +1,49 @@
+header {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background-color: #B30101;
+    align-items: center;
+    min-width: 100vw;
+    height: 60px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 60vw;
+}
+.logo button {
+    all: unset;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Krona one';
+}
+.logo button:hover {
+    border-bottom: #fff;
+    scale: 1.2;
+}
+.imgLogo {
+    width: 100px;
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        height: 50px; 
+        padding: 0 10px;
+    }
+
+    .logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgLogo {
+        width: 80px;
+    }
+
+    .logo button {
+        font-size: 14px;
+    }
+}
